@@ -16,7 +16,7 @@ jobs:
       matrix:
         branch: ${{ env.BRANCH_MATRIX }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ matrix.branch }}
@@ -40,7 +40,7 @@ jobs:
       matrix:
         branch: ${{ env.BRANCH_MATRIX }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ matrix.branch }}
@@ -77,7 +77,7 @@ jobs:
       JOBS: 2
       CONSUL_NSPACES_ENABLED: 0
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ matrix.branch }}
@@ -117,7 +117,7 @@ jobs:
       EMBER_TEST_REPORT: test-results/report-oss.xml #outputs test report for CircleCI test summary
       EMBER_TEST_PARALLEL: true #enables test parallelization with ember-exam
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ matrix.branch }}
@@ -157,7 +157,7 @@ jobs:
       JOBS: 2
       CONSUL_NSPACES_ENABLED: 1
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ matrix.branch }}
@@ -197,7 +197,7 @@ jobs:
       EMBER_TEST_REPORT: test-results/report-oss.xml #outputs test report for CircleCI test summary
       EMBER_TEST_PARALLEL: true #enables test parallelization with ember-exam
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ matrix.branch }}
@@ -234,7 +234,7 @@ jobs:
       matrix:
         branch: ${{ env.BRANCH_MATRIX }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ matrix.branch }}
